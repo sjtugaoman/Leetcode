@@ -1,14 +1,16 @@
+import java.util.*;
+
 public class RoyalNameSolution {
     static Map<Character, Integer> map = new HashMap<>();
     
-    public RoyalName() {
+    public RoyalNameSolution() {
             map.put('I', 1);
             map.put('V', 5);
             map.put('X', 10);
             map.put('L', 50);
             map.put('C', 100);
             map.put('D', 500);
-            map.put('M', 1000);. From 1point 3acres bbs
+            map.put('M', 1000);
     }
 
     static class myComp implements Comparator<String> {
@@ -52,8 +54,8 @@ public class RoyalNameSolution {
                                               "William IX",
                                               "Edward XXXIX",
                                               "Elizabeth XIX"};
-            RoyalName solution = new RoyalName();
-            String[] res = RoyalName.rayalName(names);
+            RoyalNameSolution solution = new RoyalNameSolution();
+            String[] res = solution.rayalName(names);
             for (String s : res) System.out.println(s);
     }
 
